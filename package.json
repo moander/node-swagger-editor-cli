@@ -1,0 +1,41 @@
+{
+  "name": "swagger-editor-cli",
+  "version": "1.0.0",
+  "description": "swagger-editor command line interface",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Morten Andersen",
+  "license": "ISC",
+  "dependencies": {
+    "asyncawait": "^0.7.4",
+    "bluebird": "^2.9.33",
+    "http": "0.0.0",
+    "nopter": "^0.3.0",
+    "open": "0.0.5",
+    "serve-swagger-editor": "^1.0.1"
+  },
+  "bin": {
+    "swagger-editor": "bin/swagger-editor"
+  },
+  "engines": {
+    "node": ">=0.11.2"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moander/node-swagger-editor-cli.git"
+  },
+  "keywords": [
+    "swagger-editor"
+  ],
+  "bugs": {
+    "url": "https://github.com/moander/node-swagger-editor-cli/issues"
+  },
+  "homepage": "https://github.com/moander/node-swagger-editor-cli#readme",
+  "preferGlobal": true
+}

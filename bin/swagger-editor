@@ -1,0 +1,44 @@
+#!/usr/bin/env node
+
+'use strict';
+
+process.title = 'swagger-editor';
+
+var async = require('asyncawait/async');
+var await = require('asyncawait/await');
+
+var cli = require('../lib/cli');
+var nopter = require('../lib/app-nopter')
+var Promise = require("bluebird");
+
+var args = nopter.input();
+
+var ctok = new Promise(function (res) {
+	var kills = 0;
+	process.on('SIGINT', function() {
+		if (++kills == 1) {
+		  console.log('Shutting down..');
+		  res();			
+		} else if (kills === 2) {
+			console.log('Press CTRL-C again to kill');
+		} else if (kills === 3) {
+			process.exit(1);
+		}
+	});
+});
+
+
+cli(nopter, args, process.cwd(), ctok)
+	.then(function (exitCode) {
+		exitCode = Number(exitCode||0);
+		process.exit(exitCode);
+	})
+	.catch(function (e) {
+		console.log('catch', arguments.length);
+		console.log('---');
+		console.log(e.message);
+		console.log(e.stack);
+		process.exit(1);	
+	});
+	
+
