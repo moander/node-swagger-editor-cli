@@ -1,6 +1,6 @@
 {
   "name": "swagger-editor-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "swagger-editor command line interface",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -29,14 +29,14 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moander/node-swagger-editor-cli.git"
+    "url": "git+https://github.com/moander/swagger-editor-cli.git"
   },
   "keywords": [
     "swagger-editor"
   ],
   "bugs": {
-    "url": "https://github.com/moander/node-swagger-editor-cli/issues"
+    "url": "https://github.com/moander/swagger-editor-cli/issues"
   },
-  "homepage": "https://github.com/moander/node-swagger-editor-cli#readme",
+  "homepage": "https://github.com/moander/swagger-editor-cli#readme",
   "preferGlobal": true
 }
