@@ -9,6 +9,7 @@ var await = require('asyncawait/await');
 
 var cli = require('../lib/cli');
 var nopter = require('../lib/app-nopter')
+var colors = require('colors');
 var Promise = require("bluebird");
 
 var args = nopter.input();
@@ -17,10 +18,10 @@ var ctok = new Promise(function (res) {
 	var kills = 0;
 	process.on('SIGINT', function() {
 		if (++kills == 1) {
-		  console.log('Shutting down..');
+		  console.log('Shutting down..'.yellow);
 		  res();			
 		} else if (kills === 2) {
-			console.log('Press CTRL-C again to kill');
+			console.log('Press CTRL-C again to kill'.red);
 		} else if (kills === 3) {
 			process.exit(1);
 		}
