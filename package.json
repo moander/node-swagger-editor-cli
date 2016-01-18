@@ -1,7 +1,7 @@
 {
   "name": "swagger-editor-cli",
-  "version": "1.0.4",
-  "description": "swagger-editor command line interface",
+  "version": "1.0.6",
+  "description": "deprecated",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -31,9 +31,6 @@
     "type": "git",
     "url": "git+https://github.com/moander/swagger-editor-cli.git"
   },
-  "keywords": [
-    "swagger-editor"
-  ],
   "bugs": {
     "url": "https://github.com/moander/swagger-editor-cli/issues"
   },
