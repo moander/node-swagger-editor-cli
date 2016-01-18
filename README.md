@@ -1,9 +1,14 @@
-```bash
-$ swagger-editor myspec.yaml
-```
+## DEPRECATION NOTICE
 
-## Installation
+See https://github.com/swagger-api/swagger-node for a replacement
 
-```bash
-$ npm install -g serve-swagger-editor
+Hint:
+```sh
+npm install -g swagger
+
+swagger project create hello-world
+
+cd hello-world
+
+swagger project edit
 ```
